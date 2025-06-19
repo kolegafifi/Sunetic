@@ -165,7 +165,8 @@
 		height: 600px;
 		gap: 2.5em;
 	}
-	&__hero-text {
+	&__hero-text,
+	.contact-hero-text {
 		font-size: 4.4rem;
 		color: white;
 		font-weight: 500;
@@ -177,6 +178,16 @@
 		font-size: 1.8rem;
 		color: white;
 		font-weight: lighter;
+	}
+}
+.sub-h {
+	&__container {
+		justify-content: flex-start;
+		margin-top: 9em;
+	}
+	&__hero-text {
+		font-size: 3.2rem;
+		text-align: center;
 	}
 }
 .benefits {
