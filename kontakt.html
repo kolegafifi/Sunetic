@@ -18,7 +18,7 @@
     <div class="nav" id="nav">
         <div class="wrapper">
             <div class="nav__items">
-                <a href="#beginning" class="logo-a">
+                <a href="index.html#beginning" class="logo-a">
                     <div class="small-logo">
                         <p class="small-logo__text">Sunetic</p>
                         <img class="small-logo__img" src="dist/img/sunetic-sun.svg" alt="logotyp marki">
@@ -52,7 +52,34 @@
         </div>
     </div>
     <div class="contact-form">
-
+        <div class="wrapper">
+            <div class="contact-form__container">
+                <h2>Formularz Kontaktowy</h2>
+                <form action="" class="contact-form__actual-form">
+                    <div class="contact-form__actual-form__item">
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+                    </div>
+                    <div class="contact-form__actual-form__item">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="jankos@gmail.com" required>
+                    </div>
+                    <div class="contact-form__actual-form__item">
+                        <label for="tel">Numer telefonu</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+48 900300400" required>
+                    </div>
+                    <div class="contact-form__actual-form__item">
+                        <label for="message">Wiadomość</label>
+                        <textarea name="message" id="message" placeholder="Napisz wiadomość..." required></textarea>
+                    </div>
+                    <input type="submit" value="Wyślij" class="contact-form__actual-form__send"></input>
+                </form>
+                <div class="contact-form__info">
+                    <b><span>+48</span> 123 129 128</b>
+                    <b>sunetic<span>@info.com</span></b>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="wrapper">
