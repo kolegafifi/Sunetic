@@ -1,8 +1,5 @@
 @use 'colors' as *;
 @use 'reset';
-.logo-a {
-	text-decoration: none;
-}
 .small-logo {
 	display: flex;
 	align-items: center;
@@ -142,9 +139,6 @@
 		height: 1px;
 		width: 100%;
 		background: linear-gradient(to right, transparent, white);
-	}
-	a {
-		text-decoration: none;
 	}
 }
 .show-dropout-nav {
@@ -434,7 +428,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: $primary-object;
+	background-color: #f0f0f0;
 	transition: 0.2s;
 	img {
 		height: 28px;
@@ -485,10 +479,10 @@
 				border: 1px solid #333;
 				border-radius: 0.3em;
 				font-family: 'Poppins', sans-serif;
-                &:focus{
-                    background-color: #f1f1f1;
-                    outline: none;
-                }
+				&:focus {
+					background-color: #f1f1f1;
+					outline: none;
+				}
 			}
 		}
 		&__send {
@@ -506,6 +500,114 @@
 		b {
 			color: black;
 			span {
+				color: $primary-text;
+			}
+		}
+	}
+}
+// wycena instalacji kurwa kurwa kurwa
+.calc-form {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 550px;
+	width: 100%;
+	&__container {
+		margin-top: -33em;
+		margin-bottom: 5em;
+		padding: 4em 3em;
+		background-color: rgba(237, 237, 237, 0.78);
+		border-radius: 0.6em;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__actual-calc {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		margin-bottom: 5em;
+		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 0.2em;
+			label {
+				font-size: 1.6rem;
+				font-weight: 500;
+			}
+			input,
+			textarea {
+				font-size: 1.6rem;
+				padding: 0.5em 1em;
+				border: 1px solid #333;
+				border-radius: 0.3em;
+				font-family: 'Poppins', sans-serif;
+				&:focus {
+					background-color: #f1f1f1;
+					outline: none;
+				}
+			}
+			&__radios {
+				display: flex;
+				gap: 3em;
+				margin-top: 0.5em;
+				&__radio {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 0.6em;
+					font-size: 1.6rem;
+					input[type='radio'] {
+						scale: 1.5;
+					}
+				}
+			}
+		}
+		&__send {
+			height: 40px;
+			width: 100px;
+			font-size: 1.6rem;
+		}
+	}
+	&__bottom-p {
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-bottom: 1em;
+	}
+	&__bottom-box {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+		height: 400px;
+		background-color: #ffffff;
+		border-radius: 0.6em;
+		padding: 2em;
+		&__items {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			margin-bottom: 3em;
+		}
+		.zapo-p,
+		.magazyn-p {
+			font-size: 1.5rem;
+			font-weight: 500;
+			span {
+				font-weight: 700;
+			}
+		}
+		.wynik-instalacji-p {
+			font-size: 1.7rem;
+			font-weight: 500;
+			span {
+				font-weight: 700;
+			}
+		}
+		.dotacja-info {
+			bottom: 1.4em;
+			font-size: 1.6rem;
+			a {
+				font-weight: 700;
 				color: $primary-text;
 			}
 		}
