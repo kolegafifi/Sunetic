@@ -14,7 +14,7 @@ const handleWycena = () => {
 	kwh = pradZl.value / 1.12
 	kwh *= 12
 	if (!magazyn) {
-		zapotrzebowanie.textContent = 'Nie wybrano pieca'
+		magazynCena.textContent = 'Niepełne dane'
 	} else if (magazyn.value === 'tak') {
 		if (kwh <= 2000) {
 			magazynCena.textContent = '18999zł'
@@ -33,8 +33,8 @@ const handleWycena = () => {
 		magazynCena.textContent = 'Nie chcesz magazynu'
 		kosztInstalacji += 0
 	}
-	if (pradZl.value == 0) {
-		wynikInstalacji.textContent = 'Niepełne informacje'
+	if (pradZl.value == 0 || pradZl.value == '') {
+		wynikInstalacji.textContent = 'Niepełne dane'
 	} else if (pradZl.value != 0) {
 		if (kwh <= 2000) {
 			kosztInstalacji += 8000
@@ -43,7 +43,7 @@ const handleWycena = () => {
 		} else if (kwh > 7000 && kwh <= 12000) {
 			kosztInstalacji += 37000
 		} else {
-			magazynCena.textContent = 'Zamówienie Niestandardowe, Skontaktuj się z nami'
+			wynikInstalacji.textContent = 'Zamówienie Niestandardowe, Skontaktuj się z nami'
 		}
 	}
 	zapotrzebowanie.textContent = `${kwh.toFixed(1)} kWh`

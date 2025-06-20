@@ -476,7 +476,7 @@
 			textarea {
 				font-size: 1.6rem;
 				padding: 0.5em 1em;
-				border: 1px solid #333;
+				border: 2px solid #333;
 				border-radius: 0.3em;
 				font-family: 'Poppins', sans-serif;
 				&:focus {
@@ -504,6 +504,19 @@
 			}
 		}
 	}
+	&__feedback {
+		visibility: hidden;
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-top: 1em;
+		transition: 0.3s;
+	}
+}
+.error {
+	border: 2px solid red !important;
+}
+.show-feedback {
+	visibility: visible;
 }
 // wycena instalacji kurwa kurwa kurwa
 .calc-form {

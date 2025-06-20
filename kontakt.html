@@ -58,22 +58,23 @@
                 <form action="" class="contact-form__actual-form">
                     <div class="contact-form__actual-form__item">
                         <label for="name">Imię i Nazwisko</label>
-                        <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+                        <input type="text" name="name" id="name" placeholder="Jan Kowalski">
                     </div>
                     <div class="contact-form__actual-form__item">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="jankos@gmail.com" required>
+                        <input type="email" name="email" id="email" placeholder="jankos@gmail.com">
                     </div>
                     <div class="contact-form__actual-form__item">
                         <label for="tel">Numer telefonu</label>
-                        <input type="tel" name="tel" id="tel" placeholder="+48 900300400" required>
+                        <input type="tel" name="tel" id="tel" placeholder="+48 900300400">
                     </div>
                     <div class="contact-form__actual-form__item">
                         <label for="message">Wiadomość</label>
-                        <textarea name="message" id="message" placeholder="Napisz wiadomość..." required></textarea>
+                        <textarea name="message" id="message" placeholder="Napisz wiadomość..."></textarea>
                     </div>
-                    <input type="submit" value="Wyślij" class="contact-form__actual-form__send"></input>
+                    <input type="submit" value="Wyślij" class="contact-form__actual-form__send" id="formsend"></input>
                 </form>
+                <p class="contact-form__feedback">Dziękujemy za wiadomość! Odpowiemy Ci w dwa dni robocze.</p>
                 <div class="contact-form__info">
                     <b><span>+48</span> 123 129 128</b>
                     <b>sunetic<span>@info.com</span></b>
@@ -121,6 +122,7 @@
     <div class="go-up"><img src="dist/img/arrow-up.svg" alt=""></div>
 
     <script src="dist/js/script.min.js"></script>
+    <script src="dist/js/kontakt.min.js"></script>
 </body>
 
 </html>
